@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<p>Задание1.</p>
+<p>пример1: с=++а - префиксная форма, поэтому увеличивается значение на 1 </p>
+<p>пример2: d=b++ - постфиксная форма, поэтому значение сначала выводится, затем изменяется</p>
+<p>пример3: с=2 + ++а - префиксная форма, поэтому  значение а увеличивается на 1, было изначально 2 с =2+3=5</p>
+<p>пример4: d=2+b++ - постфиксная форма, b было 2 2 d=2+2=4</p>
+<p>вывод alert - текущие значения а из примера3 равно 3, и b после примера4 стало равно 3</p>
+
+<p>задание2.</p>
+<p>let a=2; // присваевается переменной а значение 2</p>
+<p>let x=1+(a*=2) //новое значение а=старое*2 =4 , затем x=1+4=5</p>
+
+
+<script>
+    //задание 3
+/* 
+ let a = Number(prompt('введите первое целое число'));
+let b = Number(prompt('введите второе целое число'));
+if (a>=0 && b>=0) console.log(Math.abs(a-b));
+if (a<0 && b<0)  console.log(a*b);
+if (a>=0 && b<0 || a<0 && b>=0) console.log(a+b);
+*/
+   //задание 4
+ /* 
+function sum (num1,num2) {
+    return num1 + num2;
+}
+function minus (num1,num2) {
+    return num1 - num2;
+}
+function mult (num1,num2) {
+    return num1 * num2;
+}
+function divis (num1,num2) {
+    return num1 / num2;
+}
+let num1 = Number(prompt('введите первое целое число'));
+let num2 = Number(prompt('введите второе целое число'));
+console.log(sum (num1,num2) );
+console.log(minus (num1,num2));
+console.log(mult (num1,num2));
+console.log(divis (num1,num2));
+*/
+//задание 5
+/*
+function mathOperation(arg1,arg2,operation) {
+    switch (operation){
+        case "+": 
+        return(arg1+arg2);
+        case "-": 
+        return(arg1-arg2);
+        case "*": 
+        return(arg1*arg2);
+        case "/": 
+        return(arg1+arg2);
+        default:
+        alert('нет такой операции');
+    }
+}
+let arg1 = Number(prompt('введите первое число'));
+let arg2 = Number(prompt('введите второе число'));
+let operation =prompt('введите одну из операций: +  -  *  /');
+alert (mathOperation(arg1,arg2,operation));
+*/
+
+//задание 6
+/*
+function pad(arg1) {
+    switch (arg1){
+        case "1": 
+        return('ль');
+        case "2": 
+        case "3":
+        case "4":
+        return('ля');
+        case "5": 
+        case "6":
+        case "7": 
+        case "8":
+        case "9":  
+        case "0":  
+        return('лей');
+    }
+}
+let chislo = (prompt('введите сумму, которую хотите положить на счет'));
+let arg1=chislo[chislo.length-1];
+alert ('Вы положили на счет ' + chislo +' руб'+ pad(arg1));
+*/
+</script>
+
+</body>
+</html>
